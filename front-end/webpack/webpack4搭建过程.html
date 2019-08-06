@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack4搭建vue项目 | our blog</title>
+    <meta name="description" content="记录生活">
+    <link rel="icon" href="/icon/dou.png">
+  <script rel="text/javascript" src="/util/index.js"></script>
+    
+    <link rel="preload" href="/assets/css/0.styles.0f560d82.css" as="style"><link rel="preload" href="/assets/js/app.8bf9d98c.js" as="script"><link rel="preload" href="/assets/js/5.5dd72b9a.js" as="script"><link rel="preload" href="/assets/js/1.4745a61a.js" as="script"><link rel="preload" href="/assets/js/2.c69ae66c.js" as="script"><link rel="preload" href="/assets/js/35.5851a38b.js" as="script"><link rel="prefetch" href="/assets/js/10.e7d99f85.js"><link rel="prefetch" href="/assets/js/11.b57b9bbf.js"><link rel="prefetch" href="/assets/js/12.45d8ee41.js"><link rel="prefetch" href="/assets/js/13.36f46d6b.js"><link rel="prefetch" href="/assets/js/14.fcd55803.js"><link rel="prefetch" href="/assets/js/15.91f4007d.js"><link rel="prefetch" href="/assets/js/16.cffe9aa4.js"><link rel="prefetch" href="/assets/js/17.122f00f7.js"><link rel="prefetch" href="/assets/js/18.4bf898ca.js"><link rel="prefetch" href="/assets/js/19.af472f4c.js"><link rel="prefetch" href="/assets/js/20.b043cace.js"><link rel="prefetch" href="/assets/js/21.69769fae.js"><link rel="prefetch" href="/assets/js/22.bb101dbc.js"><link rel="prefetch" href="/assets/js/23.da95fb74.js"><link rel="prefetch" href="/assets/js/24.2584f3bc.js"><link rel="prefetch" href="/assets/js/25.d99ad91c.js"><link rel="prefetch" href="/assets/js/26.62a9ed3b.js"><link rel="prefetch" href="/assets/js/27.10d297df.js"><link rel="prefetch" href="/assets/js/28.8732817c.js"><link rel="prefetch" href="/assets/js/29.793c8191.js"><link rel="prefetch" href="/assets/js/30.381afe5f.js"><link rel="prefetch" href="/assets/js/31.dffda9c9.js"><link rel="prefetch" href="/assets/js/32.7e95287c.js"><link rel="prefetch" href="/assets/js/33.c17a04e7.js"><link rel="prefetch" href="/assets/js/34.46dad60d.js"><link rel="prefetch" href="/assets/js/36.9b739dfc.js"><link rel="prefetch" href="/assets/js/37.7f2b2928.js"><link rel="prefetch" href="/assets/js/38.587912af.js"><link rel="prefetch" href="/assets/js/4.95b5313f.js"><link rel="prefetch" href="/assets/js/6.8b6d4e02.js"><link rel="prefetch" href="/assets/js/7.f49e0d49.js"><link rel="prefetch" href="/assets/js/8.296cd697.js"><link rel="prefetch" href="/assets/js/9.d93349bf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0f560d82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/icon/together5.png" alt="our blog" class="logo"> <span class="site-name">our blog</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  Home
+</a></div><div class="nav-item"><a href="/front-end/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      美食
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/food/cold-dishes/" class="nav-link"><i class="iconfont undefined"></i>
+  凉拌一夏
+</a></li><li class="dropdown-item"><!----> <a href="/food/stir-fry/" class="nav-link"><i class="iconfont undefined"></i>
+  家常小炒
+</a></li><li class="dropdown-item"><!----> <a href="/food/delicacies/" class="nav-link"><i class="iconfont undefined"></i>
+  美味佳肴
+</a></li></ul></div></div><div class="nav-item"><a href="/plant/" class="nav-link"><i class="iconfont undefined"></i>
+  花卉
+</a></div><div class="nav-item"><a href="/accounting/" class="nav-link"><i class="iconfont undefined"></i>
+  会计
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  Home
+</a></div><div class="nav-item"><a href="/front-end/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      美食
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/food/cold-dishes/" class="nav-link"><i class="iconfont undefined"></i>
+  凉拌一夏
+</a></li><li class="dropdown-item"><!----> <a href="/food/stir-fry/" class="nav-link"><i class="iconfont undefined"></i>
+  家常小炒
+</a></li><li class="dropdown-item"><!----> <a href="/food/delicacies/" class="nav-link"><i class="iconfont undefined"></i>
+  美味佳肴
+</a></li></ul></div></div><div class="nav-item"><a href="/plant/" class="nav-link"><i class="iconfont undefined"></i>
+  花卉
+</a></div><div class="nav-item"><a href="/accounting/" class="nav-link"><i class="iconfont undefined"></i>
+  会计
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端技术博客</span> <!----></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>VUE</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>webpack</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/front-end/webpack/webpack4搭建过程.html" class="active sidebar-link">webpack4搭建vue项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_1-初始化项目" class="sidebar-link">1. 初始化项目</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_2-安装基本依赖模块" class="sidebar-link">2. 安装基本依赖模块</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_3-创建基本目录结构" class="sidebar-link">3. 创建基本目录结构</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_4-配置基本的webpack" class="sidebar-link">4. 配置基本的webpack</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_5-配置loader处理css-sass" class="sidebar-link">5. 配置loader处理css,sass</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_6-启用sourcemap" class="sidebar-link">6. 启用sourceMap</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_7-postcss-loader" class="sidebar-link">7. postcss-loader</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_8-css样式抽离为单独文件" class="sidebar-link">8. css样式抽离为单独文件</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_9-压缩css" class="sidebar-link">9. 压缩css</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_10-压缩js" class="sidebar-link">10. 压缩js</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_11-html-webpack-plugin将打包的文件自动注入html中" class="sidebar-link">11. html-webpack-plugin将打包的文件自动注入html中</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_12-清理dist目录" class="sidebar-link">12. 清理dist目录</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_13-对图片的处理" class="sidebar-link">13. 对图片的处理</a></li><li class="sidebar-sub-header"><a href="/front-end/webpack/webpack4搭建过程.html#_14-字体的处理" class="sidebar-link">14. 字体的处理</a></li></ul></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>webpack4搭建vue项目</h1> <hr> <div data-v-67a12151><i class="iconfont reco-account" data-v-67a12151><span data-v-67a12151>our blog</span></i> <i class="iconfont reco-date" data-v-67a12151><span data-v-67a12151>2019-8-3</span></i> <!----> <!----></div></div> <div class="content__default"><p>准备： 电脑安装node 与 npm</p> <h2 id="_1-初始化项目"><a href="#_1-初始化项目" aria-hidden="true" class="header-anchor">#</a> 1. 初始化项目</h2> <p><code>npm init</code><br>
+生成package.json</p> <h2 id="_2-安装基本依赖模块"><a href="#_2-安装基本依赖模块" aria-hidden="true" class="header-anchor">#</a> 2. 安装基本依赖模块</h2> <p>安装webpack<br> <code>npm i -D webpack</code><br>
+此时会生成package-lock.json与node_nodules文件夹</p> <p>webpack4.0之后需要装webpack-cli<br> <code>npm i -D webpack-cli</code></p> <h2 id="_3-创建基本目录结构"><a href="#_3-创建基本目录结构" aria-hidden="true" class="header-anchor">#</a> 3. 创建基本目录结构</h2> <p>项目根目录下创建src文件夹，在其中创建index.js作为入口文件；<br>
+项目根目录下创建index.html作为页面入口;<br>
+项目根目录创建dist文件夹，在其中创建index.html暂时做为打包后的入口；<br>
+项目根目录创建webpack.config.js作为webpack的配置文件(后期后抽离);</p> <div class="language- extra-class"><pre class="language-text"><code>webpack-demo
+  |- package.json
+  |- /dist
+    |- index.html   
+  |- /src
+    |- index.js
+  |- index.html
+  |- webpack.config.js
+</code></pre></div><h2 id="_4-配置基本的webpack"><a href="#_4-配置基本的webpack" aria-hidden="true" class="header-anchor">#</a> 4. 配置基本的webpack</h2> <p>在webpack.config.js中配置：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 核心模块，将相对路径转为绝对路径</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    entry<span class="token punctuation">:</span> <span class="token string">'./src/index.js'</span><span class="token punctuation">,</span> <span class="token comment">// 模块打包开始的入口</span>
+    output<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 模块打包输出位置</span>
+        filename<span class="token punctuation">:</span> <span class="token string">'main.js'</span><span class="token punctuation">,</span>
+        path<span class="token punctuation">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./dist'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此时运行npx webpack就会将入口src/index.js打包到dist/main.js；<br>
+我们在dist文件夹的index.html中利用script引入main.js文件，初步的打包就完成了。</p> <h2 id="_5-配置loader处理css-sass"><a href="#_5-配置loader处理css-sass" aria-hidden="true" class="header-anchor">#</a> 5. 配置loader处理css,sass</h2> <h3 id="处理css"><a href="#处理css" aria-hidden="true" class="header-anchor">#</a> 处理css</h3> <p>在src文件夹下增加一个style文件夹，中创建一个index.css文件</p> <div class="language-css extra-class"><pre class="language-css"><code>webpack-demo
+  |- package.json
+  
+  |- /dist
+    |- index.html 
+
+  |- /src
+    |- /style <span class="token comment">/* 新增加的style文件夹 */</span>
+      |- index.css  <span class="token comment">/* 新增加的css文件 */</span>
+    |- index.js
+
+  |- index.html
+  
+  |- webpack.config.js
+</code></pre></div><p>此时我们在src下的index.js中引入index.js，此时运行会报错：<br>
+Module parse failed: Unexpected token (1:5)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file<br>
+因为webpack本身只能处理js，其他文件并不是他的任务，所以我们现在需要配置对应的loader让它可以处理其他文件；<br>
+处理css需要style-loader与css-loader，style-loader可以帮助我们以style标签的形式以内联样式注入到index.html中；<br> <code>npm i -D style-loader css-loader</code><br>
+然后我们在webpack.config.js中增加loader</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    entry<span class="token punctuation">:</span> <span class="token string">'./src/index.js'</span><span class="token punctuation">,</span> 
+    output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        filename<span class="token punctuation">:</span> <span class="token string">'main.js'</span><span class="token punctuation">,</span>
+        path<span class="token punctuation">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./dist'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span> <span class="token comment">//检查需要处理的文件</span>
+                use<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span> <span class="token string">'css-loader'</span> <span class="token punctuation">]</span> <span class="token comment">//注意loader解析从后往前解析，顺序不能颠倒</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此外，可以看一些其他的module配置:</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    noParse<span class="token punctuation">:</span> <span class="token regex">/jquery | lodash/</span><span class="token punctuation">,</span> <span class="token comment">//不进行处理的模块</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span> 
+            include<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">//匹配特定条件</span>
+                path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./src/style'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            exclude<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">//排除特定条件</span>
+            use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'style-loader'</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    loader<span class="token punctuation">:</span> <span class="token string">'css-loader'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    loader<span class="token punctuation">:</span> <span class="token string">'less-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">//设置配置</span>
+                        noIecompat<span class="token punctuation">:</span> <span class="token boolean">true</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="处理sass"><a href="#处理sass" aria-hidden="true" class="header-anchor">#</a> 处理sass</h3> <p>安装正确的解析sass的loader：<br> <code>npm i -D sass-loader node-sass</code>
+在webpack.config.js的module中如下配置：</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            test<span class="token punctuation">:</span> <span class="token regex">/\.(sa|sc|c)ss$/</span><span class="token punctuation">,</span> <span class="token comment">//css，sass，scss文件</span>
+            use<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'style-loader'</span><span class="token punctuation">,</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span> <span class="token string">'sass-loader'</span> <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_6-启用sourcemap"><a href="#_6-启用sourcemap" aria-hidden="true" class="header-anchor">#</a> 6. 启用sourceMap</h2> <p>此时的配置如果我们想在浏览器中检查元素的样式的来源，会发现找不到，所以此时需要配置sourceMap帮助我们找到样式的根源</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            test<span class="token punctuation">:</span> <span class="token regex">/\.(sa|sc|c)ss$/</span><span class="token punctuation">,</span>
+            use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'style-loader'</span><span class="token punctuation">,</span> 
+                <span class="token punctuation">{</span>
+                    loader<span class="token punctuation">:</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        sourceMap<span class="token punctuation">:</span> <span class="token boolean">true</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    loader<span class="token punctuation">:</span> <span class="token string">'sass-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        sourceMap<span class="token punctuation">:</span> <span class="token boolean">true</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_7-postcss-loader"><a href="#_7-postcss-loader" aria-hidden="true" class="header-anchor">#</a> 7. postcss-loader</h2> <p>postCSS是css的预处理器，可以帮助我们给css3添加前缀，样式校验（stylelint），提前使用css的新特性等;<br>
+最经常用的就是给css3添加浏览器前缀：<br> <code>npm i -D postcss-loader</code><br> <code>npm i autoprefixer</code></p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            test<span class="token punctuation">:</span> <span class="token regex">/\.(sa|sc|c)ss$/</span><span class="token punctuation">,</span>
+            use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'style-loader'</span><span class="token punctuation">,</span> 
+                <span class="token punctuation">{</span>
+                    loader<span class="token punctuation">:</span> <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        sourceMap<span class="token punctuation">:</span> <span class="token boolean">true</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token comment">// 新增加的</span>
+                    loader<span class="token punctuation">:</span> <span class="token string">'postcss-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        ident<span class="token punctuation">:</span> <span class="token string">'postcss'</span><span class="token punctuation">,</span>
+                        sourceMap<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                        <span class="token function-variable function">plugins</span><span class="token punctuation">:</span> <span class="token parameter">loader</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>
+                            <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'autoprefixer'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>browsers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'&gt; 0.15% in CN'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token comment">// 浏览器前缀</span>
+                        <span class="token punctuation">]</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    loader<span class="token punctuation">:</span> <span class="token string">'sass-loader'</span><span class="token punctuation">,</span>
+                    options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        sourceMap<span class="token punctuation">:</span> <span class="token boolean">true</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_8-css样式抽离为单独文件"><a href="#_8-css样式抽离为单独文件" aria-hidden="true" class="header-anchor">#</a> 8. css样式抽离为单独文件</h2> <p>webpack 1-3使用的插件是extract-text-webpack-plugin, webpack4使用的是mini-css-extract-plugin<br> <code>npm i -D mini-css-extract-plugin</code><br>
+注意:<br>
+1.抽离后样式不会以style标签的形式注入index.html<br>
+2. mode需要设置为production（此时我们可以再创建一个webpack.prod.config.js，将原先的config配置复制过来，并且将mode设置为production）<br>
+3. 我们将打包命令写入package.json的script中避免一直重复跑npx webpack(webpakc默认将webpack.config.js作为配置文件，但是我们可以通过--config 文件名指定其他配置文件)</p> <p>在webpack.prod.config.js中引入插件 =&gt; 将style-loader设置为该插件的loader =&gt; 配置该插件<br>
+此时package.json的script样子：</p> <div class="language-json extra-class"><pre class="language-json"><code> <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npx webpack&quot;</span><span class="token punctuation">,</span> <span class="token comment">//npm run build会将webpack.connfig.js作为配置文件</span>
+    <span class="token property">&quot;dist&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npx webpack --config webpack.prod.config.js&quot;</span> <span class="token comment">// npm run dist会将webpack.prod.connfig.js作为配置文件</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>此时webpack.prod.config.js的修改的部分：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> miniCssExtractPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mini-css-extract-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//新增</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    mode<span class="token punctuation">:</span> <span class="token string">'production'</span><span class="token punctuation">,</span> <span class="token comment">//新增</span>
+    module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+                use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    miniCssExtractPlugin<span class="token punctuation">.</span>loader<span class="token punctuation">,</span> <span class="token comment">// 将style-load改为这个，其余loader不变</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">//新增</span>
+        <span class="token keyword">new</span> <span class="token class-name">miniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            filename<span class="token punctuation">:</span> <span class="token string">'[name].[hash].css'</span><span class="token punctuation">,</span> <span class="token comment">//name会与打包的入口文件名一致,hash随机哈希值</span>
+            chunkFilename<span class="token punctuation">:</span> <span class="token string">'[id].[hash].css'</span> <span class="token comment">// 异步引入，即非entry中引入时走这个</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>运行npm run dist, 在dist的index.html引入打包后main.css,就实现了样式的抽离</p> <h2 id="_9-压缩css"><a href="#_9-压缩css" aria-hidden="true" class="header-anchor">#</a> 9. 压缩css</h2> <p><code>npm i -D optimize-css-assets-webpack-plugin</code><br>
+在webpack.prod.config.js中引入并在中加入optimization中:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> OptimizeCSSAssetsPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;optimize-css-assets-webpack-plugin&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 新增</span>
+
+optimization<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token comment">// 新增，与plugins同级</span>
+    minimizer<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token keyword">new</span> <span class="token class-name">OptimizeCSSAssetsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_10-压缩js"><a href="#_10-压缩js" aria-hidden="true" class="header-anchor">#</a> 10. 压缩js</h2> <p>此插件mode需要为production;<br> <code>npm i -D uglifyjs-webpack-plugin</code><br>
+在webpack.prod.config.js中引入并在中加入optimization中:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> UglifyJsPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'uglifyjs-webpack-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token comment">// 新增</span>
+
+optimization<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+     minimizer<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+         <span class="token keyword">new</span> <span class="token class-name">OptimizeCSSAssetsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+         <span class="token keyword">new</span> <span class="token class-name">UglifyJsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token comment">// 新增</span>
+             cache<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 缓存</span>
+             parallel<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 并行压缩</span>
+             sourceMap<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment">// 是否可以追溯源头</span>
+         <span class="token punctuation">}</span><span class="token punctuation">)</span>
+     <span class="token punctuation">]</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><h2 id="_11-html-webpack-plugin将打包的文件自动注入html中"><a href="#_11-html-webpack-plugin将打包的文件自动注入html中" aria-hidden="true" class="header-anchor">#</a> 11. html-webpack-plugin将打包的文件自动注入html中</h2> <p><code>npm i -D html-webpack-plugin</code><br>
+在webpack.prod.config.js中引入并在plugins中添加:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'html-webpack-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//新增</span>
+ plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+     <span class="token keyword">new</span> <span class="token class-name">miniCssExtractPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+         filename<span class="token punctuation">:</span> <span class="token string">'[name].[hash].css'</span><span class="token punctuation">,</span>
+         chunkFilename<span class="token punctuation">:</span> <span class="token string">'[id].[hash].css'</span>
+     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+     <span class="token keyword">new</span> <span class="token class-name">HtmlWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token comment">// 新增</span>
+         filename<span class="token punctuation">:</span> <span class="token string">'main.html'</span><span class="token punctuation">,</span> <span class="token comment">// 打包生成的文件名</span>
+         template<span class="token punctuation">:</span> <span class="token string">'index.html'</span><span class="token punctuation">,</span> <span class="token comment">// 模板来源</span>
+         minify<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+           collapseWhitespace<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//删除空格</span>
+           removeComments<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 删除注释</span>
+           removeAttributeQuotes<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token comment">// 移除属性的引号</span>
+         <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span><span class="token punctuation">)</span>
+ <span class="token punctuation">]</span>
+</code></pre></div><h2 id="_12-清理dist目录"><a href="#_12-清理dist目录" aria-hidden="true" class="header-anchor">#</a> 12. 清理dist目录</h2> <p>目前的配置每次我们打包都会在dist中生成文件，一直累加,实际开发中我们需求每次打包都将之前的文件清空；<br> <code>npm i -D clean-webpack-plugin</code><br>
+在webpack.config.js中引入并在plugins中添加:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> CleanWebpackPlugin <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'clean-webpack-plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//新增</span>
+plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token comment">// 新增</span>
+    <span class="token keyword">new</span> <span class="token class-name">CleanWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+<span class="token punctuation">]</span>
+</code></pre></div><p>此时运行npm run build, 会发现dist文件夹下的旧文件没有，只有最新打包的</p> <h2 id="_13-对图片的处理"><a href="#_13-对图片的处理" aria-hidden="true" class="header-anchor">#</a> 13. 对图片的处理</h2> <p>我们在项目的根目录下创建一个static文件夹存放我们的静态资源，在其中创建一个img文件夹放入一张图片,在index.css中引入此图片作为背景;<br>
+此时打包会报错，我们需要url-loader或者file-loader处理：<br>
+两者都能对图片进行一个处理，但两者有区别:<br>
+file-loader是将图片打包到生成目录下，依然会请求加载图片；<br>
+url-loader配置limit当小于limit字节时会使用url-loader将图片转为base64编码注入代码中，不会再次请求，当大于limit字节时会使用file-loader处理，也就是说url-loader依赖file-loader</p> <h3 id="file-loader"><a href="#file-loader" aria-hidden="true" class="header-anchor">#</a> file-loader</h3> <p><code>npm i -D file-loader</code><br>
+在webpack.config.js中的module中的rules中增加</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    test<span class="token punctuation">:</span> <span class="token regex">/\.(png|svg|jpg|jpeg|gif)$/</span><span class="token punctuation">,</span>
+    use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            loader<span class="token punctuation">:</span> <span class="token string">'file-loader'</span><span class="token punctuation">,</span>
+            options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+              name<span class="token punctuation">:</span> <span class="token string">'[path][name].[ext]'</span><span class="token punctuation">,</span> <span class="token comment">// path可以将图片打包的和原先路径一样的位置在dist中， name会保持和原先名字一样，ext保持原先的后缀名</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>打包后会发现dist文件夹下多了一张图片</p> <h3 id="image-webpack-loader压缩图片"><a href="#image-webpack-loader压缩图片" aria-hidden="true" class="header-anchor">#</a> image-webpack-loader压缩图片</h3> <p><code>npm i -D image-webpack-loader</code><br>
+我这里安装的时候出了点小意外，安装一直报错，后来使用cnpm安装才可以的。如果你像我一样报错的话建议按以下步骤清除之前的残余再使用cnpm安装:</p> <ol><li>清除残余 <code>npm uninstall image-webpack-loader</code></li> <li>全局安装cnpm <code>npm install cnpm -g --registry=https://registry.npm.taobao.org</code></li> <li>cnpm安装 <code>cnpm install --save-dev image-webpack-loader</code>
+安装后在webpack.config.js中module的rules中配置</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    test<span class="token punctuation">:</span> <span class="token regex">/\.(png|svg|jpg|jpeg|gif)$/</span><span class="token punctuation">,</span>
+    use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            loader<span class="token punctuation">:</span> <span class="token string">'file-loader'</span><span class="token punctuation">,</span>
+            options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+              name<span class="token punctuation">:</span> <span class="token string">'[path][name].[ext]'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            loader<span class="token punctuation">:</span> <span class="token string">'image-webpack-loader'</span> <span class="token comment">// 新增</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="url-loader将图片转为base64格式"><a href="#url-loader将图片转为base64格式" aria-hidden="true" class="header-anchor">#</a> url-loader将图片转为base64格式</h3> <p><code>npm i -D url-loader</code><br>
+在webpack.config.js中引入并在module的rules中配置:</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token punctuation">{</span>
+    test<span class="token punctuation">:</span> <span class="token regex">/\.(png|svg|jpg|jpeg|gif)$/</span><span class="token punctuation">,</span>
+    use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span> <span class="token comment">// 修改</span>
+            loader<span class="token punctuation">:</span> <span class="token string">'url-loader'</span><span class="token punctuation">,</span> 
+            options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+              limit<span class="token punctuation">:</span> <span class="token number">10000</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            loader<span class="token punctuation">:</span> <span class="token string">'image-webpack-loader'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_14-字体的处理"><a href="#_14-字体的处理" aria-hidden="true" class="header-anchor">#</a> 14. 字体的处理</h2> <p>字体的处理也是用的file-loader, 需要我们在module的rules中配置一下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  test<span class="token punctuation">:</span> <span class="token regex">/\.(woff|woff2|eot|ttf|otf)$/</span><span class="token punctuation">,</span>
+  use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'file-loader'</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <!----> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/front-end/git/小乌龟TortoiseGit报Disconnected.html" class="prev">
+          小乌龟TortoiseGit报Disconnected
+        </a></span> <!----></p></div> </main> <div class="valine-wrapper" data-v-a9f8b536><div id="valine" data-v-a9f8b536></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-701d410c data-v-701d410c><i class="iconfont reco-up" data-v-701d410c></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8bf9d98c.js" defer></script><script src="/assets/js/5.5dd72b9a.js" defer></script><script src="/assets/js/1.4745a61a.js" defer></script><script src="/assets/js/2.c69ae66c.js" defer></script><script src="/assets/js/35.5851a38b.js" defer></script>
+  </body>
+</html>
